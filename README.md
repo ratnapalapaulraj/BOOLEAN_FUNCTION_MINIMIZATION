@@ -34,11 +34,18 @@ Hardware – PCs, Cyclone II , USB flasher
 **Program:**
 
 ```
-module funct1(a,b,c,d,f1); 
+module exp2(a,b,c,d,f1); 
 input a,b,c,d; 
 output f1; 
 assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c)); 
 endmodule
+```
+```
+module exp2(w,x,y,z,f2); 
+input w,x,y,z; 
+output f2; 
+assign f2=((~y & z)|( w & y )|(x & y)); 
+endmodule 
 ```
 
 Developed by: RegisterNumber:25016862
@@ -46,11 +53,13 @@ Developed by: RegisterNumber:25016862
 
 **RTL realization**
 <img width="1920" height="1080" alt="exp2 logic diagram" src="https://github.com/user-attachments/assets/a5387f36-f088-4f81-b01a-7ac2bac616c9" />
+<img width="1920" height="1021" alt="exp2 logicgate" src="https://github.com/user-attachments/assets/9cd1e276-7397-4c6f-938f-7150d445946e" />
 
 
 
 **RTL**
 <img width="1920" height="1080" alt="exp2 waveform" src="https://github.com/user-attachments/assets/1644d1a2-62de-46fe-b5ec-54114ac490be" />
+<img width="1920" height="1021" alt="exp2 wave" src="https://github.com/user-attachments/assets/c2a7ab12-59cc-43d5-b267-9d54966ee849" />
 
 
 
